@@ -1,9 +1,63 @@
 {
-  "name": "wa-sqlite",
+  "name": "@xmtp/wa-sqlite",
   "version": "1.0.0",
   "type": "module",
   "main": "src/sqlite-api.js",
   "types": "src/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/sqlite-api.js"
+    },
+    "./build": {
+      "types": "./src/types/index.d.ts",
+      "default": "./dist/wa-sqlite.mjs"
+    },
+    "./build/asyncify": {
+      "types": "./src/types/index.d.ts",
+      "default": "./dist/wa-sqlite-async.mjs"
+    },
+    "./build/jspi": {
+      "types": "./src/types/index.d.ts",
+      "default": "./dist/wa-sqlite-jspi.mjs"
+    },
+    "./vfs/AccessHandlePool": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/AccessHandlePoolVFS.js"
+    },
+    "./vfs/IDBBatchAtomic": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/IDBBatchAtomicVFS.js"
+    },
+    "./vfs/IDBMirror": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/IDBMirrorVFS.js"
+    },
+    "./vfs/MemoryAsync": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/MemoryAsyncVFS.js"
+    },
+    "./vfs/Memory": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/MemoryVFS.js"
+    },
+    "./vfs/OPFSAdaptive": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/OPFSAdaptiveVFS.js"
+    },
+    "./vfs/OPFSAnyContext": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/OPFSAnyContextVFS.js"
+    },
+    "./vfs/OPFSCoopSync": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/OPFSCoopSyncVFS.js"
+    },
+    "./vfs/OPFSPermuted": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/examples/OPFSPermutedVFS.js"
+    }
+  },
   "files": [
     "src/sqlite-constants.js",
     "src/sqlite-api.js",
